@@ -6,6 +6,13 @@ from tkinter import Tk, Canvas as Cv
 class QuadTree:
     NB_NODES : int = 4
     def __init__(self, hg: bool | QuadTree, hd: bool | QuadTree, bd: bool | QuadTree,bg: bool | QuadTree):
+        """
+               Parameters:
+               - hg (bool or QuadTree): Top-left quadrant.
+               - hd (bool or QuadTree): Top-right quadrant.
+               - bd (bool or QuadTree): Bottom-right quadrant.
+               - bg (bool or QuadTree): Bottom-left quadrant.
+               """
         self.bg = bg
         self.bd = bd
         self.hd = hd
