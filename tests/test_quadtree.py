@@ -13,3 +13,4 @@ def test_single():
     filename = "files/quadtree_easy.txt"
     q = QuadTree.fromFile(filename)
     assert q.depth == 1
+
